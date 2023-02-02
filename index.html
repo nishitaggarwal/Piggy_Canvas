@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+        <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="matter.js"></script>
+    <script src="BaseClass.js"></script>
+    <script src="Pig.js"></script>
+    <script src="Bird.js"></script>
+    <style>
+      .User_Options{
+        height:40%;
+        margintop:45;
+        margin:210;
+      }
+      #Pigsize{
+          
+            
+        font-size: 13px; 
+        padding: 5px 6px 5px 15px; 
+        border: 3px solid #55ffdd; 
+        {% comment %} display:block; {% endcomment %}
+        text-align:center;
+      }
+      button{
+        all:unset;
+        background-color: #cbc3e3;
+        padding: 5px 10px;
+        width:3%;
+        height:20%;
+        border-radius: 4px; 
+      }
+      button:focus{
+        outline:1px solid purple;
+      }
+      .tofo{
+
+        border:2px solid #00ff00;
+        outline:1px solid purple;
+      }
+
+
+   
+
+    </style>
+
+  </head>
+  <body>
+    <div class="User_Options">
+      <input type="NUMBER" id="Pigsize" value="" placeholder="Size: 10">
+
+        <label for="favcolor">Select</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        
+      
+      <button class = "line_button" id = "choice" value = " " onclick={myFunction("line")}>Line</button>
+      <button class = "bird_button" id = "choice" value = " " onclick={myFunction("bird")} >Bird</button>
+      <button class = "pig_button" id = "choice" value = " " onclick={myFunction("pig")} >Pig</button>
+      <button class = "eraser_button" id = "choice" value = " " onclick={myFunction("eraser")} >Eraser</button>
+      
+      
+      
+      
+     
+
+
+
+    </div>
+      <div class = "tofo">
+        <script src="sketch.js">
+
+
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
